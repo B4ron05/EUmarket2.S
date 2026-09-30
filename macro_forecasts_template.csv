@@ -1,0 +1,49 @@
+Country,Category,Metric Name,Consensus Forecast,Unit,Source / Description
+Germany,Growth,GDP Growth QoQ,0.1,%,Destatis German Quarterly GDP
+Germany,Growth,ifo Business Climate Index,89.0,Index,ifo Institute Business Climate
+Germany,Growth,HCOB Manufacturing PMI,45.5,Index,S&P Global / HCOB German Mfg PMI
+Germany,Growth,Industrial Production MoM,0.2,%,Destatis Industrial Production
+Germany,Consumer,Retail Sales MoM,0.3,%,Destatis Real Turnover in Retail
+Germany,Consumer,GfK Consumer Climate Index,-22.0,Index,GfK Consumer Climate
+Germany,Consumer,Real Wage Growth YoY,3.2,%,Destatis Real Wages
+Germany,Consumer,KBA Car Registrations YoY,2.0,%,Kraftfahrt-Bundesamt
+Germany,Inflation,CPI YoY,2.1,%,Destatis Consumer Price Index
+Germany,Inflation,Core CPI YoY,2.4,%,Destatis Core Inflation (ex food/energy)
+Germany,Inflation,PPI YoY,0.0,%,Destatis Producer Price Index
+Germany,Inflation,2 Yr Yield (30d SMA),2.42,%,German 2Y Bund Benchmark 30d SMA
+Germany,Jobs,Unemployment Rate %,6.0,%,Bundesagentur für Arbeit
+Germany,Jobs,Unemployment Change MoM,8.0,k,BA Monthly Jobless Change
+Germany,Jobs,Employment Change,0.1,%,Destatis Total Employment Change
+Germany,Jobs,BA-X Job Vacancy Index,117.8,Index,BA Job Vacancy Index
+France,Growth,INSEE GDP Growth QoQ,0.2,%,INSEE Quarterly Real GDP
+France,Growth,INSEE Business Climate Indicator,101.0,Index,INSEE Business Climate Survey
+France,Growth,HCOB France Composite PMI,51.0,Index,S&P Global / HCOB France Composite PMI
+France,Growth,Industrial Production MoM,0.2,%,INSEE Industrial Production
+France,Consumer,Household Goods Consumption MoM,0.2,%,INSEE Dépenses de consommation
+France,Consumer,INSEE Consumer Confidence Indicator,93.0,Index,INSEE Household Confidence
+France,Consumer,Real Wage Growth YoY (SMB),2.4,%,Dares / Banque de France
+France,Consumer,New Car Registrations YoY,1.5,%,Plateforme Automobile (PFA)
+France,Inflation,French HICP YoY,2.0,%,Eurostat / INSEE Harmonised CPI
+France,Inflation,Core CPI YoY,2.2,%,INSEE Core Inflation (IPCH hors énergie/aliments)
+France,Inflation,Producer Price Index YoY,0.1,%,INSEE PPI
+France,Inflation,2Y OAT Yield (30d SMA),2.58,%,French 2Y OAT Benchmark 30d SMA
+France,Jobs,ILO Unemployment Rate %,7.4,%,INSEE Taux de chômage BIT
+France,Jobs,France Travail Jobseekers MoM,3.5,k,France Travail Demandeurs d'emploi
+France,Jobs,Non-Farm Employment QoQ,0.1,%,INSEE Emploi salarié marchand
+France,Jobs,Hiring Difficulties Index,51.0,%,Banque de France Enquête de conjoncture
+UK,Growth,UK GDP Growth QoQ,0.3,%,ONS Quarterly GDP Growth
+UK,Growth,UK Composite PMI,52.0,Index,S&P Global / CIPS UK Composite PMI
+UK,Growth,Industrial & Manufacturing Production MoM,0.4,%,ONS Industrial Production
+UK,Growth,CBI Business Optimism,10.0,%,CBI Industrial Trends Net Balance
+UK,Consumer,Retail Sales Volumes MoM (Ex-Fuel),0.4,%,ONS Retail Sales Volume
+UK,Consumer,GfK UK Consumer Confidence,-14.0,Index,GfK UK Consumer Confidence
+UK,Consumer,Real Regular Earnings YoY,2.8,%,ONS Average Weekly Earnings (ex bonuses)
+UK,Consumer,SMMT New Car Registrations YoY,2.0,%,SMMT UK Vehicle Registrations
+UK,Inflation,UK Headline CPI YoY,2.4,%,ONS Consumer Prices Index
+UK,Inflation,UK Core CPI YoY,3.5,%,ONS CPI excluding energy food alcohol tobacco
+UK,Inflation,PPI Output YoY,0.4,%,ONS Producer Price Index Output
+UK,Inflation,2Y Gilt Yield (30d SMA),3.82,%,Bank of England 2Y Gilt Yield 30d SMA
+UK,Jobs,UK Unemployment Rate (3M %),4.2,%,ONS Labour Force Survey Unemployment
+UK,Jobs,Claimant Count Change MoM,5.0,k,ONS Universal Credit / Jobseeker Claimants
+UK,Jobs,Employment Change 3M/3M,45.0,k,ONS Rolling 3-Month Workforce Change
+UK,Jobs,ONS Total Job Vacancies,875.0,k,ONS Unfilled Job Openings
