@@ -188,6 +188,183 @@ INVERTED_METRICS = {
     'UK Headline CPI YoY', 'UK Core CPI YoY', 'PPI Output YoY', '2Y Gilt Yield (30d SMA)', 'UK Unemployment Rate (3M %)', 'Claimant Count Change MoM'
 }
 
+METRIC_CATEGORIES = {
+    'Germany': [
+        {
+            'title': 'Economic Growth & Industrial Momentum',
+            'icon': '📈',
+            'badge': 'Destatis, ifo Institute & S&P Global HCOB',
+            'badge_color': '#2962FF',
+            'badge_bg': 'rgba(41, 98, 255, 0.12)',
+            'badge_border': 'rgba(41, 98, 255, 0.25)',
+            'metrics': [
+                {'key': 'GDP Growth QoQ', 'suffix': '%'},
+                {'key': 'ifo Business Climate Index', 'suffix': ''},
+                {'key': 'HCOB Manufacturing PMI', 'suffix': ''},
+                {'key': 'Industrial Production MoM', 'suffix': '%'},
+            ]
+        },
+        {
+            'title': 'State of the Consumer',
+            'icon': '🛒',
+            'badge': 'Domestic Demand & Household Balance (Destatis / NIM / KBA)',
+            'badge_color': '#2962FF',
+            'badge_bg': 'rgba(41, 98, 255, 0.12)',
+            'badge_border': 'rgba(41, 98, 255, 0.25)',
+            'metrics': [
+                {'key': 'Retail Sales MoM', 'suffix': '%'},
+                {'key': 'GfK Consumer Climate Index', 'suffix': ''},
+                {'key': 'Real Wage Growth YoY', 'suffix': '%'},
+                {'key': 'KBA Car Registrations YoY', 'suffix': '%'},
+            ]
+        },
+        {
+            'title': 'Inflation & Monetary Conditions',
+            'icon': '🔥',
+            'badge': 'Inverted: High Prints Increase ECB Tightening Pressure',
+            'badge_color': '#F44336',
+            'badge_bg': 'rgba(244, 67, 54, 0.12)',
+            'badge_border': 'rgba(244, 67, 54, 0.25)',
+            'metrics': [
+                {'key': 'CPI YoY', 'suffix': '%'},
+                {'key': 'Core CPI YoY', 'suffix': '%'},
+                {'key': 'PPI YoY', 'suffix': '%'},
+                {'key': '2 Yr Yield (30d SMA)', 'suffix': '%'},
+            ]
+        },
+        {
+            'title': 'Labor Market & Employment Stability',
+            'icon': '💼',
+            'badge': 'Workforce Resilience & Labor Slack (BA / Destatis)',
+            'badge_color': '#2962FF',
+            'badge_bg': 'rgba(41, 98, 255, 0.12)',
+            'badge_border': 'rgba(41, 98, 255, 0.25)',
+            'metrics': [
+                {'key': 'Unemployment Rate %', 'suffix': '%'},
+                {'key': 'Unemployment Change MoM', 'suffix': 'k'},
+                {'key': 'Employment Change', 'suffix': '%'},
+                {'key': 'BA-X Job Vacancy Index', 'suffix': ''},
+            ]
+        }
+    ],
+    'France': [
+        {
+            'title': 'Economic Growth & Business Activity',
+            'icon': '📈',
+            'badge': 'INSEE & S&P Global HCOB',
+            'badge_color': '#2962FF',
+            'badge_bg': 'rgba(41, 98, 255, 0.12)',
+            'badge_border': 'rgba(41, 98, 255, 0.25)',
+            'metrics': [
+                {'key': 'INSEE GDP Growth QoQ', 'suffix': '%'},
+                {'key': 'INSEE Business Climate Indicator', 'suffix': ''},
+                {'key': 'HCOB France Composite PMI', 'suffix': ''},
+                {'key': 'Industrial Production MoM', 'suffix': '%'},
+            ]
+        },
+        {
+            'title': 'State of the Consumer & Household Demand',
+            'icon': '🛒',
+            'badge': 'INSEE Dépenses & PFA Auto Registrations',
+            'badge_color': '#2962FF',
+            'badge_bg': 'rgba(41, 98, 255, 0.12)',
+            'badge_border': 'rgba(41, 98, 255, 0.25)',
+            'metrics': [
+                {'key': 'Household Goods Consumption MoM', 'suffix': '%'},
+                {'key': 'INSEE Consumer Confidence Indicator', 'suffix': ''},
+                {'key': 'Real Wage Growth YoY (SMB)', 'suffix': '%'},
+                {'key': 'New Car Registrations YoY', 'suffix': '%'},
+            ]
+        },
+        {
+            'title': 'Inflation, Sovereign Risk & Monetary Conditions',
+            'icon': '🔥',
+            'badge': 'Inverted: High Prints Increase ECB Tightening Pressure',
+            'badge_color': '#F44336',
+            'badge_bg': 'rgba(244, 67, 54, 0.12)',
+            'badge_border': 'rgba(244, 67, 54, 0.25)',
+            'metrics': [
+                {'key': 'French HICP YoY', 'suffix': '%'},
+                {'key': 'Core CPI YoY', 'suffix': '%'},
+                {'key': 'Producer Price Index YoY', 'suffix': '%'},
+                {'key': '2Y OAT Yield (30d SMA)', 'suffix': '%'},
+            ]
+        },
+        {
+            'title': 'Labor Market & Employment Stability',
+            'icon': '💼',
+            'badge': 'INSEE BIT, France Travail & Banque de France',
+            'badge_color': '#2962FF',
+            'badge_bg': 'rgba(41, 98, 255, 0.12)',
+            'badge_border': 'rgba(41, 98, 255, 0.25)',
+            'metrics': [
+                {'key': 'ILO Unemployment Rate %', 'suffix': '%'},
+                {'key': 'France Travail Jobseekers MoM', 'suffix': 'k'},
+                {'key': 'Non-Farm Employment QoQ', 'suffix': '%'},
+                {'key': 'Hiring Difficulties Index', 'suffix': '%'},
+            ]
+        }
+    ],
+    'UK': [
+        {
+            'title': 'Economic Growth & Industrial Output',
+            'icon': '📈',
+            'badge': 'ONS & S&P Global CIPS',
+            'badge_color': '#2962FF',
+            'badge_bg': 'rgba(41, 98, 255, 0.12)',
+            'badge_border': 'rgba(41, 98, 255, 0.25)',
+            'metrics': [
+                {'key': 'UK GDP Growth QoQ', 'suffix': '%'},
+                {'key': 'UK Composite PMI', 'suffix': ''},
+                {'key': 'Industrial & Manufacturing Production MoM', 'suffix': '%'},
+                {'key': 'CBI Business Optimism', 'suffix': '%'},
+            ]
+        },
+        {
+            'title': 'Consumer Strength & Retail Volumes',
+            'icon': '🛒',
+            'badge': 'ONS Retail & GfK Consumer Sentiment',
+            'badge_color': '#2962FF',
+            'badge_bg': 'rgba(41, 98, 255, 0.12)',
+            'badge_border': 'rgba(41, 98, 255, 0.25)',
+            'metrics': [
+                {'key': 'Retail Sales Volumes MoM (Ex-Fuel)', 'suffix': '%'},
+                {'key': 'GfK UK Consumer Confidence', 'suffix': ''},
+                {'key': 'Real Regular Earnings YoY', 'suffix': '%'},
+                {'key': 'SMMT New Car Registrations YoY', 'suffix': '%'},
+            ]
+        },
+        {
+            'title': 'Inflation & Sovereign Yield Pressures',
+            'icon': '🔥',
+            'badge': 'Inverted: Inflation Threat Triggers BoE Hawkish Stance',
+            'badge_color': '#F44336',
+            'badge_bg': 'rgba(244, 67, 54, 0.12)',
+            'badge_border': 'rgba(244, 67, 54, 0.25)',
+            'metrics': [
+                {'key': 'UK Headline CPI YoY', 'suffix': '%'},
+                {'key': 'UK Core CPI YoY', 'suffix': '%'},
+                {'key': 'PPI Output YoY', 'suffix': '%'},
+                {'key': '2Y Gilt Yield (30d SMA)', 'suffix': '%'},
+            ]
+        },
+        {
+            'title': 'Labor Market & Wage Dynamics',
+            'icon': '💼',
+            'badge': 'ONS Labor Force & Job Openings Trajectory',
+            'badge_color': '#2962FF',
+            'badge_bg': 'rgba(41, 98, 255, 0.12)',
+            'badge_border': 'rgba(41, 98, 255, 0.25)',
+            'metrics': [
+                {'key': 'UK Unemployment Rate (3M %)', 'suffix': '%'},
+                {'key': 'Claimant Count Change MoM', 'suffix': 'k'},
+                {'key': 'Employment Change 3M/3M', 'suffix': 'k'},
+                {'key': 'ONS Total Job Vacancies', 'suffix': 'k'},
+            ]
+        }
+    ]
+}
+
 # ---------------------------------------------------------
 # Google Sheet Sync Helper
 # ---------------------------------------------------------
@@ -414,9 +591,98 @@ tab_macro, tab_cot, tab_charts, tab_docs = st.tabs([
 ])
 
 with tab_macro:
-    st.subheader(f"{country} Macroeconomic Indicators ({active_model.split(':')[0]})")
-    df_metrics = pd.DataFrame(table_rows)
-    st.dataframe(df_metrics, use_container_width=True, hide_index=True)
+    header_col1, header_col2 = st.columns([3, 1])
+    with header_col1:
+        st.subheader(f"{country} Macroeconomic Indicators ({active_model.split(':')[0]})")
+    with header_col2:
+        view_mode = st.radio("Display Mode:", ["Cards (Executive Grid)", "Table View"], horizontal=True, label_visibility="collapsed")
+
+    if view_mode == "Cards (Executive Grid)":
+        categories = METRIC_CATEGORIES.get(country, [])
+        for cat in categories:
+            # Render category header bar
+            st.markdown(f"""
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 24px; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 18px;">{cat['icon']}</span>
+                    <span style="font-size: 15px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.2px;">{cat['title']}</span>
+                </div>
+                <span style="font-size: 11px; padding: 3px 10px; border-radius: 4px; background: {cat['badge_bg']}; color: {cat['badge_color']}; border: 1px solid {cat['badge_border']}; font-weight: 600;">
+                    {cat['badge']}
+                </span>
+            </div>
+            """, unsafe_allow_html=True)
+
+            cols = st.columns(4)
+            for idx, m in enumerate(cat['metrics']):
+                m_key = m['key']
+                suffix = m.get('suffix', '')
+                hist_vals = country_metrics.get(m_key, [0.0])
+                actual = hist_vals[-1]
+                forecast = forecasts_dict.get(m_key, actual)
+                diff = round(actual - forecast, 2)
+                is_inverted = m_key in INVERTED_METRICS
+
+                # Equity market impact:
+                spread = diff if not is_inverted else -diff
+                if spread > 0.001:
+                    bias_label = "Bullish"
+                    val_color = "#2979FF"
+                    pill_bg = "rgba(41, 121, 255, 0.18)"
+                    pill_color = "#2979FF"
+                    pill_border = "rgba(41, 121, 255, 0.35)"
+                elif spread < -0.001:
+                    bias_label = "Bearish"
+                    val_color = "#F44336"
+                    pill_bg = "rgba(244, 67, 54, 0.18)"
+                    pill_color = "#F44336"
+                    pill_border = "rgba(244, 67, 54, 0.35)"
+                else:
+                    bias_label = "Neutral"
+                    val_color = "#A0A0A0"
+                    pill_bg = "rgba(255, 255, 255, 0.08)"
+                    pill_color = "#A0A0A0"
+                    pill_border = "rgba(255, 255, 255, 0.15)"
+
+                # Format strings cleanly
+                actual_str = f"{actual}{suffix}"
+                est_str = f"{forecast}{suffix}"
+                diff_str = f"+{diff}{suffix}" if diff > 0 else f"{diff}{suffix}"
+
+                card_html = f"""
+                <div style="
+                    background: #141721;
+                    border: 1px solid rgba(255, 255, 255, 0.08);
+                    border-radius: 10px;
+                    padding: 14px 16px;
+                    min-height: 118px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+                    margin-bottom: 8px;
+                ">
+                    <div style="font-size: 12.5px; color: #9E9E9E; font-weight: 500; margin-bottom: 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="{m_key}">
+                        {m_key}
+                    </div>
+                    <div style="font-size: 26px; font-weight: 800; color: {val_color}; line-height: 1.2; margin-bottom: 10px;">
+                        {actual_str}
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 6px; font-size: 11px; flex-wrap: wrap;">
+                        <span style="background: {pill_bg}; color: {pill_color}; border: 1px solid {pill_border}; padding: 2px 7px; border-radius: 4px; font-weight: 700; font-size: 10.5px;">
+                            {bias_label}
+                        </span>
+                        <span style="color: #757575;">
+                            Est: {est_str} | Surprise: <strong style="color: {val_color};">{diff_str}</strong>
+                        </span>
+                    </div>
+                </div>
+                """
+                with cols[idx]:
+                    st.markdown(card_html, unsafe_allow_html=True)
+    else:
+        df_metrics = pd.DataFrame(table_rows)
+        st.dataframe(df_metrics, use_container_width=True, hide_index=True)
 
 with tab_cot:
     st.subheader(f"Institutional COT Positioning — {asset_info['cot']}")
